@@ -1,0 +1,49 @@
+# ImpactTools — Apache config
+Options -Indexes
+DirectoryIndex index.html
+
+# Enable rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Force trailing slash for directories (SEO)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.+[^/])$ /$1/ [L,R=301]
+
+  # Custom 404
+  ErrorDocument 404 /404.html
+</IfModule>
+
+# Character set
+AddDefaultCharset UTF-8
+
+# MIME types
+<IfModule mod_mime.c>
+  AddType application/xml    .xml
+  AddType text/css           .css
+  AddType application/javascript .js
+  AddType image/svg+xml      .svg
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/xml image/svg+xml
+</IfModule>
+
+# Cache control (versioned via ?v= in HTML)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 5 minutes"
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>

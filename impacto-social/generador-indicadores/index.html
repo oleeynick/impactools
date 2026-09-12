@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<script>try{if("scrollRestoration" in history)history.scrollRestoration="manual";}catch(e){}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generador de Indicadores de Impacto | ImpactTools</title>
+<meta name="description" content="Genera indicadores de actividad, resultado e impacto para tu proyecto social, con ejemplos de cómo medirlos. Gratis y sin registro.">
+<link rel="canonical" href="https://impacttools.app/impacto-social/generador-indicadores/">
+<meta property="og:title" content="Generador de Indicadores de Impacto — ImpactTools">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><nav class="nav-links"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a></nav><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button></div><div class="container mobile-menu" id="mobile-menu"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a><a href="/contacto/">Contacto</a></div></header>
+
+<main>
+  <div class="container"><nav class="breadcrumb"><a href="/">Inicio</a><span>/</span><a href="/impacto-social/">Impacto social</a><span>/</span><span>Indicadores</span></nav></div>
+
+  <section class="tool-hero"><div class="container">
+    <span class="badge">📐 Impacto social</span>
+    <h1>Generador de indicadores de impacto</h1>
+    <p class="lead">Describe tu objetivo, actividad y población; te sugerimos indicadores de actividad, de resultado y de impacto, con ejemplos de cómo medir cada uno.</p>
+  </div></section>
+
+  <section class="tight"><div class="container tool-shell">
+    <div class="tool-main">
+      <div class="tool-panel">
+        <h2>Datos base</h2>
+        <div class="field"><label>Objetivo</label><input class="input" id="f-obj" placeholder="Ej.: Mejorar la asistencia escolar de niñas de 10–14 años"></div>
+        <div class="field"><label>Actividad principal</label><input class="input" id="f-act" placeholder="Ej.: Tutorías semanales de refuerzo"></div>
+        <div class="field"><label>Población</label><input class="input" id="f-pob" placeholder="Ej.: niñas de 10–14 años del barrio X"></div>
+        <div class="field"><label>Resultado esperado</label><input class="input" id="f-res" placeholder="Ej.: aumento del 20 % en la asistencia media"></div>
+        <div class="actions"><button class="btn" id="btn-gen">Generar indicadores</button><button class="btn ghost" id="btn-reset">Reiniciar</button></div>
+      </div>
+
+      <div class="result" id="result-box" hidden>
+        <h3>Indicadores sugeridos</h3>
+        <div class="result-content" id="result-content" contenteditable="true"></div>
+        <div class="result-actions">
+          <button class="btn sm" id="btn-copy">Copiar</button>
+          <button class="btn sm ghost" id="btn-download">Descargar (.txt)</button>
+        </div>
+      </div>
+
+      <div class="ad leaderboard">Anuncio</div>
+
+      <div class="content-block">
+        <h2>Qué son los indicadores de impacto social</h2>
+        <p>Los indicadores son las señales que permiten saber si un proyecto va bien. Suelen agruparse en tres niveles: actividad (qué se hizo), resultado (qué cambió a corto plazo) e impacto (qué cambió a medio y largo plazo).</p>
+        <h3>Buenos indicadores...</h3>
+        <ul>
+          <li>Son <strong>específicos</strong>: nombran algo concreto y medible.</li>
+          <li>Son <strong>relevantes</strong>: reflejan lo que realmente importa.</li>
+          <li>Son <strong>alcanzables</strong>: se pueden medir con los recursos disponibles.</li>
+          <li>Son <strong>comparables</strong>: sirven para ver cambio en el tiempo.</li>
+        </ul>
+        <p>Complementa este generador con la <a href="/impacto-social/calculadora-impacto/">calculadora de impacto</a> y el <a href="/impacto-social/generador-objetivos/">generador de objetivos</a>.</p>
+      </div>
+
+      <div class="ad inContent">Anuncio</div>
+
+      <div class="content-block">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq">
+          <details><summary>¿Cuántos indicadores debería tener un proyecto?</summary><p>Entre 3 y 7 por nivel es un buen punto de partida. Más de eso suele volverse inmanejable.</p></details>
+          <details><summary>¿Y si no puedo medir el impacto directamente?</summary><p>Usa <em>indicadores proxy</em>: cambios observables que se relacionen con el impacto que buscas.</p></details>
+          <details><summary>¿Necesito herramientas complejas?</summary><p>No siempre. Encuestas, listas de asistencia y observación pueden ser suficientes al inicio.</p></details>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Herramientas relacionadas</h2>
+        <div class="related">
+          <a href="/impacto-social/generador-proyecto/"><div class="icon">🌱</div><div><strong>Proyecto social</strong><span>Estructura completa.</span></div></a>
+          <a href="/impacto-social/generador-objetivos/"><div class="icon">🧭</div><div><strong>Objetivos</strong><span>Del rumbo a los indicadores.</span></div></a>
+          <a href="/impacto-social/calculadora-impacto/"><div class="icon">📊</div><div><strong>Calculadora de impacto</strong><span>Presenta tus cifras.</span></div></a>
+          <a href="/liderazgo/objetivos-smart/"><div class="icon">🎯</div><div><strong>SMART</strong><span>Objetivos medibles.</span></div></a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="tool-side">
+      <div class="tool-panel"><h2 style="font-size: 15px;">Consejo</h2><p class="muted" style="font-size: 14px;">Registra la línea base antes de empezar: sin ella no podrás demostrar el cambio.</p></div>
+      <div class="ad side">Anuncio</div>
+    </aside>
+  </div></section>
+</main>
+<div class="ad sticky-mobile">Anuncio</div>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div class="brand-col"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><p class="muted" style="margin-top: 12px; max-width: 320px; font-size: 14.5px;">Herramientas gratuitas para convertir ideas en acción.</p><div class="vorka-badge" style="margin-top: 14px;">Creado por <strong><a href="https://www.vorka.mx" rel="noopener">Vorka</a></strong></div></div>
+    <div><h4>Emprendimiento</h4><ul><li><a href="/emprendimiento/generador-pitch/">Pitch</a></li><li><a href="/emprendimiento/canvas/">Canvas</a></li><li><a href="/emprendimiento/calculadora-roi/">ROI</a></li><li><a href="/emprendimiento/propuesta-valor/">Propuesta</a></li></ul></div>
+    <div><h4>Impacto social</h4><ul><li><a href="/impacto-social/generador-proyecto/">Proyecto</a></li><li><a href="/impacto-social/calculadora-impacto/">Impacto</a></li><li><a href="/impacto-social/generador-indicadores/">Indicadores</a></li><li><a href="/impacto-social/generador-objetivos/">Objetivos</a></li></ul></div>
+    <div><h4>Liderazgo</h4><ul><li><a href="/liderazgo/objetivos-smart/">SMART</a></li><li><a href="/liderazgo/plan-accion/">Plan</a></li><li><a href="/liderazgo/evaluacion-liderazgo/">Evaluación</a></li><li><a href="/liderazgo/mision-vision/">Misión y visión</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© <span id="year">2026</span> ImpactTools</div><div><a href="/sobre/">Sobre</a> · <a href="/contacto/">Contacto</a> · <a href="/privacidad/">Privacidad</a> · <a href="/terminos/">Términos</a> · <a href="/cookies/">Cookies</a> · <a href="https://www.vorka.mx/oleeynick/" rel="noopener" target="_blank">Acompañamiento</a></div></div>
+</div></footer>
+
+<script src="/assets/main.js" defer></script>
+<script src="./tool.js" defer></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body></html>

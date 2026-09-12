@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<script>try{if("scrollRestoration" in history)history.scrollRestoration="manual";}catch(e){}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generador de Plan de Acción gratis | ImpactTools</title>
+<meta name="description" content="Genera un plan de acción con actividades, responsables, fechas, prioridades e indicadores. Editable, descargable y sin registro.">
+<link rel="canonical" href="https://impacttools.app/liderazgo/plan-accion/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><nav class="nav-links"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a></nav><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button></div><div class="container mobile-menu" id="mobile-menu"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a><a href="/contacto/">Contacto</a></div></header>
+
+<main>
+  <div class="container"><nav class="breadcrumb"><a href="/">Inicio</a><span>/</span><a href="/liderazgo/">Liderazgo</a><span>/</span><span>Plan de acción</span></nav></div>
+
+  <section class="tool-hero"><div class="container">
+    <span class="badge">🗺️ Liderazgo</span>
+    <h1>Plan de acción</h1>
+    <p class="lead">Convierte tu objetivo en actividades con responsables, fechas, prioridades e indicadores. Añade filas, edita y descarga en CSV.</p>
+  </div></section>
+
+  <section class="tight"><div class="container">
+    <div class="tool-panel">
+      <div class="grid2">
+        <div class="field"><label>Objetivo</label><input class="input" id="f-obj" placeholder="Ej.: Aumentar la asistencia escolar un 20 % al cierre del año"></div>
+        <div class="field"><label>Fecha límite</label><input class="input" id="f-lim" type="date"></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><label>Personas involucradas (coma)</label><input class="input" id="f-per" placeholder="Ej.: Ana, Marcos, Lucía"></div>
+        <div class="field"><label>Recursos disponibles</label><input class="input" id="f-rec" placeholder="Ej.: aulas, tutores voluntarios"></div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="btn-add">Añadir acción</button>
+        <button class="btn ghost" id="btn-seed">Sugerir estructura</button>
+        <button class="btn ghost" id="btn-clear">Vaciar</button>
+        <button class="btn ghost" id="btn-download">Descargar (.csv)</button>
+        <button class="btn ghost" id="btn-print">Imprimir</button>
+      </div>
+
+      <div class="table-wrap" style="margin-top: 16px;">
+        <table class="grid" id="plan-table">
+          <thead>
+            <tr><th>Acción</th><th>Responsable</th><th>Inicio</th><th>Fin</th><th>Prioridad</th><th>Indicador</th><th>Estado</th><th></th></tr>
+          </thead>
+          <tbody id="plan-body"></tbody>
+        </table>
+      </div>
+      <p class="help" id="save-status" style="margin-top: 10px;">Se guarda automáticamente en tu navegador.</p>
+    </div>
+
+    <div class="ad leaderboard">Anuncio</div>
+
+    <div class="content-block">
+      <h2>Cómo hacer un plan de acción</h2>
+      <p>Un plan de acción es una tabla que descompone un objetivo en pasos concretos con responsable, fechas e indicador. Sirve para saber qué hay que hacer, quién lo hace, cuándo y cómo veremos que se logró.</p>
+      <h3>Reglas simples</h3>
+      <ul>
+        <li>Cada acción tiene <strong>un responsable único</strong>. Si son dos, uno lidera.</li>
+        <li>Cada acción tiene <strong>una fecha final</strong>. Sin fecha, no es una acción.</li>
+        <li>Cada acción tiene <strong>un indicador de logro</strong>. Sin él, no sabremos si se cumplió.</li>
+        <li>Prioriza. No todo es "alta".</li>
+      </ul>
+      <p>Empareja este plan con tus <a href="/liderazgo/objetivos-smart/">objetivos SMART</a> e <a href="/impacto-social/generador-indicadores/">indicadores</a>.</p>
+    </div>
+
+    <div class="ad inContent">Anuncio</div>
+
+    <div class="content-block">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq">
+        <details><summary>¿Cuántas acciones debo tener?</summary><p>Entre 5 y 12 acciones por objetivo suele ser un buen equilibrio. Más de eso se vuelve difícil de gestionar.</p></details>
+        <details><summary>¿Se guarda mi plan?</summary><p>Sí, en tu navegador. Puedes descargarlo como CSV para trabajarlo en hoja de cálculo o compartirlo con el equipo.</p></details>
+        <details><summary>¿Puedo priorizar automáticamente?</summary><p>La prioridad la decides tú: usa alta/media/baja y ordena las filas manualmente.</p></details>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>Herramientas relacionadas</h2>
+      <div class="related">
+        <a href="/liderazgo/objetivos-smart/"><div class="icon">🎯</div><div><strong>SMART</strong><span>Convierte tu meta en objetivo.</span></div></a>
+        <a href="/impacto-social/generador-indicadores/"><div class="icon">📐</div><div><strong>Indicadores</strong><span>Cómo medirás el avance.</span></div></a>
+        <a href="/impacto-social/generador-proyecto/"><div class="icon">🌱</div><div><strong>Proyecto social</strong><span>Estructura completa.</span></div></a>
+        <a href="/emprendimiento/canvas/"><div class="icon">🧩</div><div><strong>Canvas</strong><span>Modelo de negocio.</span></div></a>
+      </div>
+    </div>
+  </div></section>
+</main>
+<div class="ad sticky-mobile">Anuncio</div>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div class="brand-col"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><p class="muted" style="margin-top: 12px; max-width: 320px; font-size: 14.5px;">Herramientas gratuitas para convertir ideas en acción.</p><div class="vorka-badge" style="margin-top: 14px;">Creado por <strong><a href="https://www.vorka.mx" rel="noopener">Vorka</a></strong></div></div>
+    <div><h4>Emprendimiento</h4><ul><li><a href="/emprendimiento/generador-pitch/">Pitch</a></li><li><a href="/emprendimiento/canvas/">Canvas</a></li><li><a href="/emprendimiento/calculadora-roi/">ROI</a></li><li><a href="/emprendimiento/propuesta-valor/">Propuesta</a></li></ul></div>
+    <div><h4>Impacto social</h4><ul><li><a href="/impacto-social/generador-proyecto/">Proyecto</a></li><li><a href="/impacto-social/calculadora-impacto/">Impacto</a></li><li><a href="/impacto-social/generador-indicadores/">Indicadores</a></li><li><a href="/impacto-social/generador-objetivos/">Objetivos</a></li></ul></div>
+    <div><h4>Liderazgo</h4><ul><li><a href="/liderazgo/objetivos-smart/">SMART</a></li><li><a href="/liderazgo/plan-accion/">Plan</a></li><li><a href="/liderazgo/evaluacion-liderazgo/">Evaluación</a></li><li><a href="/liderazgo/mision-vision/">Misión y visión</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© <span id="year">2026</span> ImpactTools</div><div><a href="/sobre/">Sobre</a> · <a href="/contacto/">Contacto</a> · <a href="/privacidad/">Privacidad</a> · <a href="/terminos/">Términos</a> · <a href="/cookies/">Cookies</a> · <a href="https://www.vorka.mx/oleeynick/" rel="noopener" target="_blank">Acompañamiento</a></div></div>
+</div></footer>
+
+<script src="/assets/main.js" defer></script>
+<script src="./tool.js" defer></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body></html>

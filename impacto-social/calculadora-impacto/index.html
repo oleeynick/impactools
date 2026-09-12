@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<script>try{if("scrollRestoration" in history)history.scrollRestoration="manual";}catch(e){}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Impacto Social gratis | ImpactTools</title>
+<meta name="description" content="Introduce las cifras de tu proyecto social y obtén métricas de impacto presentables y un resumen textual. Gratis, sin registro.">
+<link rel="canonical" href="https://impacttools.app/impacto-social/calculadora-impacto/">
+<meta property="og:title" content="Calculadora de Impacto Social gratis — ImpactTools">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><nav class="nav-links"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a></nav><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button></div><div class="container mobile-menu" id="mobile-menu"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a><a href="/contacto/">Contacto</a></div></header>
+
+<main>
+  <div class="container"><nav class="breadcrumb"><a href="/">Inicio</a><span>/</span><a href="/impacto-social/">Impacto social</a><span>/</span><span>Calculadora de impacto</span></nav></div>
+
+  <section class="tool-hero"><div class="container">
+    <span class="badge">📊 Impacto social</span>
+    <h1>Calculadora de impacto</h1>
+    <p class="lead">Reúne los datos de tu proyecto y obtén métricas visuales listas para presentar, más un resumen textual editable.</p>
+  </div></section>
+
+  <section class="tight"><div class="container tool-shell">
+    <div class="tool-main">
+      <div class="tool-panel">
+        <h2>Datos del proyecto</h2>
+        <p class="help">Deja en blanco lo que no aplique.</p>
+        <div class="grid3">
+          <div class="field"><label>Personas beneficiadas</label><input class="input" id="f-personas" type="number" min="0" placeholder="1250"></div>
+          <div class="field"><label>Voluntarios movilizados</label><input class="input" id="f-vol" type="number" min="0" placeholder="35"></div>
+          <div class="field"><label>Horas de voluntariado</label><input class="input" id="f-horas" type="number" min="0" placeholder="420"></div>
+        </div>
+        <div class="grid3">
+          <div class="field"><label>Actividades realizadas</label><input class="input" id="f-act" type="number" min="0" placeholder="18"></div>
+          <div class="field"><label>Comunidades alcanzadas</label><input class="input" id="f-com" type="number" min="0" placeholder="7"></div>
+          <div class="field"><label>Recursos invertidos</label><input class="input" id="f-rec" type="number" min="0" placeholder="15000"></div>
+        </div>
+        <div class="field"><label>Nombre del proyecto (opcional)</label><input class="input" id="f-nombre" placeholder="Escuelas del Barrio"></div>
+        <div class="actions"><button class="btn" id="btn-calc">Calcular impacto</button><button class="btn ghost" id="btn-reset">Reiniciar</button></div>
+      </div>
+
+      <div class="result" id="result-box" hidden>
+        <h3>Métricas de impacto</h3>
+        <div class="stat-grid" id="stats-grid"></div>
+        <h3 style="margin-top: 14px;">Resumen textual</h3>
+        <div class="result-content" id="result-content" contenteditable="true"></div>
+        <div class="result-actions">
+          <button class="btn sm" id="btn-copy">Copiar</button>
+          <button class="btn sm ghost" id="btn-download">Descargar (.txt)</button>
+        </div>
+      </div>
+
+      <div class="ad leaderboard">Anuncio</div>
+
+      <div class="content-block">
+        <h2>Cómo medir el impacto de un proyecto social</h2>
+        <p>Medir el impacto es traducir el trabajo hecho en cifras que cualquier persona pueda entender. Sirve para rendir cuentas, para aprender qué está funcionando y para conseguir aliados.</p>
+        <h3>De la actividad al impacto</h3>
+        <p>Distingue tres niveles:</p>
+        <ul>
+          <li><strong>Actividades</strong>: lo que se hizo (talleres, jornadas, sesiones).</li>
+          <li><strong>Resultados</strong>: lo que cambió a corto plazo en las personas participantes.</li>
+          <li><strong>Impacto</strong>: los cambios a medio y largo plazo en la comunidad.</li>
+        </ul>
+        <p>Complementa esta calculadora con el <a href="/impacto-social/generador-indicadores/">generador de indicadores</a> para saber qué medir en cada nivel.</p>
+      </div>
+
+      <div class="ad inContent">Anuncio</div>
+
+      <div class="content-block">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq">
+          <details><summary>¿Puedo usarla para una memoria anual?</summary><p>Sí. El resumen textual está pensado para copiarse en informes o memorias. Ajústalo con tu voz y contexto.</p></details>
+          <details><summary>¿Qué pasa si aún no tengo cifras?</summary><p>Deja los campos vacíos. Rellenar aunque sea 2 o 3 valores ya te da una foto útil.</p></details>
+          <details><summary>¿Estas cifras equivalen a un estudio de impacto?</summary><p>No. Un estudio riguroso requiere línea base, grupo de comparación y metodología específica. Esto es un resumen presentable.</p></details>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Herramientas relacionadas</h2>
+        <div class="related">
+          <a href="/impacto-social/generador-proyecto/"><div class="icon">🌱</div><div><strong>Proyecto social</strong><span>Estructura completa del proyecto.</span></div></a>
+          <a href="/impacto-social/generador-indicadores/"><div class="icon">📐</div><div><strong>Indicadores</strong><span>Qué medir en cada nivel.</span></div></a>
+          <a href="/emprendimiento/calculadora-roi/"><div class="icon">📈</div><div><strong>ROI</strong><span>Para retornos monetizables.</span></div></a>
+          <a href="/liderazgo/plan-accion/"><div class="icon">🗺️</div><div><strong>Plan de acción</strong><span>Traduce tus resultados en próximos pasos.</span></div></a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="tool-side">
+      <div class="tool-panel"><h2 style="font-size: 15px;">Consejo</h2><p class="muted" style="font-size: 14px; margin: 6px 0;">Las cifras cuentan una historia, pero no la reemplazan. Añade un testimonio o un caso concreto cuando presentes tus métricas.</p></div>
+      <div class="ad side">Anuncio</div>
+    </aside>
+  </div></section>
+</main>
+<div class="ad sticky-mobile">Anuncio</div>
+
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div class="brand-col"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><p class="muted" style="margin-top: 12px; max-width: 320px; font-size: 14.5px;">Herramientas gratuitas para convertir ideas en acción.</p><div class="vorka-badge" style="margin-top: 14px;">Creado por <strong><a href="https://www.vorka.mx" rel="noopener">Vorka</a></strong></div></div>
+    <div><h4>Emprendimiento</h4><ul><li><a href="/emprendimiento/generador-pitch/">Pitch</a></li><li><a href="/emprendimiento/canvas/">Canvas</a></li><li><a href="/emprendimiento/calculadora-roi/">ROI</a></li><li><a href="/emprendimiento/propuesta-valor/">Propuesta de valor</a></li></ul></div>
+    <div><h4>Impacto social</h4><ul><li><a href="/impacto-social/generador-proyecto/">Proyecto</a></li><li><a href="/impacto-social/calculadora-impacto/">Impacto</a></li><li><a href="/impacto-social/generador-indicadores/">Indicadores</a></li><li><a href="/impacto-social/generador-objetivos/">Objetivos</a></li></ul></div>
+    <div><h4>Liderazgo</h4><ul><li><a href="/liderazgo/objetivos-smart/">SMART</a></li><li><a href="/liderazgo/plan-accion/">Plan</a></li><li><a href="/liderazgo/evaluacion-liderazgo/">Evaluación</a></li><li><a href="/liderazgo/mision-vision/">Misión y visión</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© <span id="year">2026</span> ImpactTools</div><div><a href="/sobre/">Sobre</a> · <a href="/contacto/">Contacto</a> · <a href="/privacidad/">Privacidad</a> · <a href="/terminos/">Términos</a> · <a href="/cookies/">Cookies</a> · <a href="https://www.vorka.mx/oleeynick/" rel="noopener" target="_blank">Acompañamiento</a></div></div>
+</div></footer>
+
+<script src="/assets/main.js" defer></script>
+<script src="./tool.js" defer></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body></html>

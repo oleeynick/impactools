@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<script>try{if("scrollRestoration" in history)history.scrollRestoration="manual";}catch(e){}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de ROI gratis — Calcula tu retorno de inversión | ImpactTools</title>
+<meta name="description" content="Calculadora de ROI gratis y sin registro. Introduce inversión y retorno para obtener el porcentaje de retorno, ganancia neta y explicación clara del resultado.">
+<link rel="canonical" href="https://impacttools.app/emprendimiento/calculadora-roi/">
+<meta property="og:title" content="Calculadora de ROI gratis — ImpactTools">
+<meta property="og:description" content="Calcula el ROI de tu proyecto en segundos.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de ROI","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://impacttools.app/emprendimiento/calculadora-roi/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://impacttools.app/"},{"@type":"ListItem","position":2,"name":"Emprendimiento","item":"https://impacttools.app/emprendimiento/"},{"@type":"ListItem","position":3,"name":"Calculadora de ROI","item":"https://impacttools.app/emprendimiento/calculadora-roi/"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a>
+    <nav class="nav-links"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a></nav>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="container mobile-menu" id="mobile-menu"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a><a href="/contacto/">Contacto</a></div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Inicio</a><span>/</span><a href="/emprendimiento/">Emprendimiento</a><span>/</span><span>Calculadora de ROI</span></nav>
+  </div>
+
+  <section class="tool-hero">
+    <div class="container">
+      <span class="badge">📈 Emprendimiento</span>
+      <h1>Calculadora de ROI</h1>
+      <p class="lead">Introduce tu inversión y tu retorno; te devolvemos el ROI, la ganancia neta y una explicación en lenguaje claro.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container tool-shell">
+      <div class="tool-main">
+        <div class="tool-panel">
+          <h2>Introduce tus cifras</h2>
+          <p class="help">Puedes usar la moneda que prefieras — el ROI se calcula igual.</p>
+
+          <div class="grid2">
+            <div class="field">
+              <label for="f-inv">Inversión</label>
+              <input class="input" id="f-inv" type="number" inputmode="decimal" placeholder="Ej.: 5000">
+              <small>El dinero, tiempo o recursos convertidos a valor monetario que pusiste.</small>
+            </div>
+            <div class="field">
+              <label for="f-ret">Retorno total</label>
+              <input class="input" id="f-ret" type="number" inputmode="decimal" placeholder="Ej.: 8000">
+              <small>Todo lo que has recibido a cambio (ventas, ingresos, valor).</small>
+            </div>
+          </div>
+
+          <div class="grid2">
+            <div class="field">
+              <label for="f-per">Periodo (opcional)</label>
+              <input class="input" id="f-per" type="number" min="0" placeholder="Ej.: 12" inputmode="numeric">
+              <small>Meses transcurridos entre la inversión y el retorno.</small>
+            </div>
+            <div class="field">
+              <label for="f-mon">Moneda (opcional)</label>
+              <input class="input" id="f-mon" placeholder="Ej.: EUR / USD / MXN" value="EUR">
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn" id="btn-calc">Calcular ROI</button>
+            <button class="btn ghost" id="btn-reset">Reiniciar</button>
+          </div>
+        </div>
+
+        <div class="result" id="result-box" hidden>
+          <h3>Tu ROI</h3>
+          <div class="stat-grid">
+            <div class="stat"><div class="num" id="s-roi">—</div><div class="lbl">ROI</div></div>
+            <div class="stat"><div class="num" id="s-gan">—</div><div class="lbl">Ganancia neta</div></div>
+            <div class="stat"><div class="num" id="s-mult">—</div><div class="lbl">Multiplicador</div></div>
+            <div class="stat"><div class="num" id="s-anual">—</div><div class="lbl">ROI anualizado</div></div>
+          </div>
+          <div class="result-content" id="result-content" contenteditable="true"></div>
+          <div class="result-actions">
+            <button class="btn sm" id="btn-copy">Copiar explicación</button>
+            <button class="btn sm ghost" id="btn-download">Descargar (.txt)</button>
+          </div>
+        </div>
+
+        <div class="ad leaderboard" aria-label="Espacio publicitario">Anuncio</div>
+
+        <div class="content-block">
+          <h2>Qué es el ROI y cómo se calcula</h2>
+          <p>El <strong>ROI (Return On Investment)</strong> mide cuánto se gana o se pierde en relación con lo invertido. Se expresa en porcentaje y permite comparar decisiones que involucran cantidades distintas de dinero.</p>
+          <h3>Fórmula</h3>
+          <p style="font-family: var(--font-mono); background: var(--bg-soft); padding: 10px 12px; border-radius: 8px;">ROI (%) = ((Retorno − Inversión) / Inversión) × 100</p>
+          <h3>Ejemplo</h3>
+          <p>Si inviertes 5.000 en una campaña de marketing y facturas 8.000 gracias a ella, tu ganancia neta es 3.000. El ROI es (3.000 / 5.000) × 100 = <strong>60 %</strong>. Por cada euro invertido has recuperado 1,60 euros.</p>
+          <h3>Cómo interpretarlo</h3>
+          <ul>
+            <li><strong>ROI &lt; 0 %</strong>: la operación pierde dinero.</li>
+            <li><strong>ROI = 0 %</strong>: recuperas exactamente lo invertido.</li>
+            <li><strong>0 % – 20 %</strong>: retorno modesto; útil si asumes poco riesgo.</li>
+            <li><strong>20 % – 100 %</strong>: retorno saludable en muchos proyectos.</li>
+            <li><strong>&gt; 100 %</strong>: has más que duplicado tu inversión.</li>
+          </ul>
+          <p>Ojo: el ROI no considera el tiempo. Un 30 % en 3 meses no es equivalente a un 30 % en 3 años. Por eso, siempre que tengas un periodo, mira también el <strong>ROI anualizado</strong> que la herramienta calcula automáticamente.</p>
+        </div>
+
+        <div class="ad inContent" aria-label="Espacio publicitario">Anuncio</div>
+
+        <div class="content-block">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+            <details><summary>¿Sirve para proyectos sociales?</summary><p>Sí, si puedes cuantificar los retornos. Cuando no es posible, es mejor usar la <a href="/impacto-social/calculadora-impacto/">calculadora de impacto</a>.</p></details>
+            <details><summary>¿Debo incluir impuestos?</summary><p>Depende de tu contexto. Para comparar campañas o inversiones puntuales suele ser más útil trabajar con cifras netas después de impuestos.</p></details>
+            <details><summary>¿Y si mi retorno es intangible?</summary><p>El ROI clásico exige convertir el retorno a valor monetario. Si no puedes, plantea indicadores complementarios (nuevos clientes, alcance, etc.).</p></details>
+            <details><summary>¿Cómo se calcula el ROI anualizado?</summary><p>((1 + ROI)^(12/meses) − 1) × 100. Permite comparar retornos con horizontes distintos en una base común de un año.</p></details>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <h2>Herramientas relacionadas</h2>
+          <div class="related">
+            <a href="/emprendimiento/generador-pitch/" data-tool="generador-pitch"><div class="icon">🎤</div><div><strong>Generador de pitch</strong><span>Cuenta tu ROI en un pitch claro.</span></div></a>
+            <a href="/emprendimiento/canvas/" data-tool="canvas"><div class="icon">🧩</div><div><strong>Canvas</strong><span>Encaja las cifras dentro de tu modelo.</span></div></a>
+            <a href="/impacto-social/calculadora-impacto/" data-tool="calculadora-impacto"><div class="icon">📊</div><div><strong>Calculadora de impacto</strong><span>Para retornos no monetarios.</span></div></a>
+            <a href="/liderazgo/objetivos-smart/" data-tool="objetivos-smart"><div class="icon">🎯</div><div><strong>Objetivos SMART</strong><span>Define metas medibles.</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="tool-side">
+        <div class="tool-panel">
+          <h2 style="font-size: 15px;">Consejos rápidos</h2>
+          <ul style="padding-left: 18px; margin: 6px 0; color: var(--text-soft); font-size: 14px; line-height: 1.7;">
+            <li>Compara siempre en la misma moneda.</li>
+            <li>Incluye costes ocultos (tiempo, comisiones).</li>
+            <li>Usa el ROI anualizado en horizontes largos.</li>
+          </ul>
+        </div>
+        <div class="ad side" aria-label="Espacio publicitario">Anuncio</div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<div class="ad sticky-mobile">Anuncio</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="brand-col"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><p class="muted" style="margin-top: 12px; max-width: 320px; font-size: 14.5px;">Herramientas gratuitas para convertir ideas en acción.</p><div class="vorka-badge" style="margin-top: 14px;">Creado por <strong><a href="https://www.vorka.mx" rel="noopener">Vorka</a></strong></div></div>
+      <div><h4>Emprendimiento</h4><ul><li><a href="/emprendimiento/generador-pitch/">Pitch</a></li><li><a href="/emprendimiento/canvas/">Canvas</a></li><li><a href="/emprendimiento/calculadora-roi/">ROI</a></li><li><a href="/emprendimiento/propuesta-valor/">Propuesta de valor</a></li></ul></div>
+      <div><h4>Impacto social</h4><ul><li><a href="/impacto-social/generador-proyecto/">Proyecto</a></li><li><a href="/impacto-social/calculadora-impacto/">Impacto</a></li><li><a href="/impacto-social/generador-indicadores/">Indicadores</a></li><li><a href="/impacto-social/generador-objetivos/">Objetivos</a></li></ul></div>
+      <div><h4>Liderazgo</h4><ul><li><a href="/liderazgo/objetivos-smart/">SMART</a></li><li><a href="/liderazgo/plan-accion/">Plan</a></li><li><a href="/liderazgo/evaluacion-liderazgo/">Evaluación</a></li><li><a href="/liderazgo/mision-vision/">Misión y visión</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© <span id="year">2026</span> ImpactTools</div><div><a href="/sobre/">Sobre</a> · <a href="/contacto/">Contacto</a> · <a href="/privacidad/">Privacidad</a> · <a href="/terminos/">Términos</a> · <a href="/cookies/">Cookies</a> · <a href="https://www.vorka.mx/oleeynick/" rel="noopener" target="_blank">Acompañamiento</a></div></div>
+  </div>
+</footer>
+
+<script src="/assets/main.js" defer></script>
+<script src="./tool.js" defer></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body></html>

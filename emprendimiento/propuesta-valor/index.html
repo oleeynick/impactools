@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<script>try{if("scrollRestoration" in history)history.scrollRestoration="manual";}catch(e){}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generador de propuesta de valor gratis | ImpactTools</title>
+<meta name="description" content="Genera tu propuesta de valor con una herramienta gratuita. Responde 6 preguntas y obtén varias versiones listas para usar en tu web, pitch o canvas.">
+<link rel="canonical" href="https://impacttools.app/emprendimiento/propuesta-valor/">
+<meta property="og:title" content="Generador de propuesta de valor gratis — ImpactTools">
+<meta property="og:description" content="Convierte lo que haces en una frase clara de propuesta de valor.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Generador de propuesta de valor","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://impacttools.app/emprendimiento/propuesta-valor/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a>
+    <nav class="nav-links"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a></nav>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="container mobile-menu" id="mobile-menu"><a href="/emprendimiento/">Emprendimiento</a><a href="/impacto-social/">Impacto social</a><a href="/liderazgo/">Liderazgo</a><a href="/blog/">Blog</a><a href="/sobre/">Sobre</a><a href="/contacto/">Contacto</a></div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Inicio</a><span>/</span><a href="/emprendimiento/">Emprendimiento</a><span>/</span><span>Propuesta de valor</span></nav>
+  </div>
+
+  <section class="tool-hero">
+    <div class="container">
+      <span class="badge">💡 Emprendimiento</span>
+      <h1>Generador de propuesta de valor</h1>
+      <p class="lead">Responde 6 preguntas y obtén varias versiones de propuesta de valor listas para tu web, tu pitch o tu canvas.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container tool-shell">
+      <div class="tool-main">
+        <div class="tool-panel">
+          <h2>Tus respuestas</h2>
+          <div class="field"><label for="f-vendes">¿Qué vendes o qué haces?</label><input class="input" id="f-vendes" placeholder="Ej.: un curso online de fotografía"></div>
+          <div class="field"><label for="f-a-quien">¿A quién?</label><input class="input" id="f-a-quien" placeholder="Ej.: aficionados que quieren mejorar rápido"></div>
+          <div class="field"><label for="f-problema">¿Qué problema resuelves?</label><textarea class="textarea" id="f-problema" placeholder="Ej.: la sensación de estancarse tomando fotos que no destacan"></textarea></div>
+          <div class="field"><label for="f-como">¿Cómo lo solucionas?</label><textarea class="textarea" id="f-como" placeholder="Ej.: con 20 lecciones prácticas y retos semanales guiados"></textarea></div>
+          <div class="grid2">
+            <div class="field"><label for="f-beneficio">¿Qué beneficio obtiene el cliente?</label><input class="input" id="f-beneficio" placeholder="Ej.: hacer fotos que emocionan en 8 semanas"></div>
+            <div class="field"><label for="f-diferencia">¿Qué te diferencia?</label><input class="input" id="f-diferencia" placeholder="Ej.: mentoría en directo cada semana"></div>
+          </div>
+          <div class="actions">
+            <button class="btn" id="btn-generar">Generar propuestas</button>
+            <button class="btn ghost" id="btn-reset">Reiniciar</button>
+          </div>
+        </div>
+
+        <div class="result" id="result-box" hidden>
+          <h3>Versiones de tu propuesta de valor</h3>
+          <div class="result-content" id="result-content" contenteditable="true"></div>
+          <div class="result-actions">
+            <button class="btn sm" id="btn-copy">Copiar</button>
+            <button class="btn sm ghost" id="btn-download">Descargar (.txt)</button>
+          </div>
+        </div>
+
+        <div class="ad leaderboard">Anuncio</div>
+
+        <div class="content-block">
+          <h2>Cómo crear una propuesta de valor</h2>
+          <p>Una <strong>propuesta de valor</strong> responde en una frase a por qué alguien debería elegirte. No es un eslogan ni un titular publicitario: es la promesa concreta que hace tu producto o servicio a un cliente concreto.</p>
+          <h3>Una fórmula clásica</h3>
+          <p style="font-family: var(--font-mono); background: var(--bg-soft); padding: 10px 12px; border-radius: 8px;">Ayudamos a <em>[cliente]</em> a <em>[beneficio]</em> mediante <em>[cómo lo haces]</em>, a diferencia de <em>[alternativa]</em>.</p>
+          <h3>Buenas propuestas de valor…</h3>
+          <ul>
+            <li>Son específicas: hablan de un cliente y un beneficio concretos.</li>
+            <li>Se pueden probar: si nadie las entiende, no funcionan.</li>
+            <li>No usan superlativos vacíos ("líderes", "los mejores").</li>
+            <li>Pueden decir "no" a segmentos que no encajan.</li>
+          </ul>
+          <p>Una vez tengas tu propuesta, encájala en tu <a href="/emprendimiento/canvas/">canvas</a> y llévala a tu <a href="/emprendimiento/generador-pitch/">pitch</a>.</p>
+        </div>
+
+        <div class="ad inContent">Anuncio</div>
+
+        <div class="content-block">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+            <details><summary>¿Cuántas propuestas debería generar?</summary><p>Al menos 3 versiones que digan lo mismo con distinto énfasis. Enseña las tres a personas de tu público y quédate con la más clara.</p></details>
+            <details><summary>¿Puede cambiar con el tiempo?</summary><p>Sí. Es normal iterarla a medida que aprendes qué valora realmente tu cliente.</p></details>
+            <details><summary>¿Sirve para proyectos sociales?</summary><p>Sí. En impacto también hace falta explicar el porqué y para quién.</p></details>
+          </div>
+        </div>
+
+        <div class="content-block">
+          <h2>Herramientas relacionadas</h2>
+          <div class="related">
+            <a href="/emprendimiento/canvas/"><div class="icon">🧩</div><div><strong>Canvas</strong><span>Ubica tu propuesta en el bloque central.</span></div></a>
+            <a href="/emprendimiento/generador-pitch/"><div class="icon">🎤</div><div><strong>Pitch</strong><span>Lleva tu propuesta al escenario.</span></div></a>
+            <a href="/impacto-social/generador-objetivos/"><div class="icon">🧭</div><div><strong>Objetivos</strong><span>Traduce tu propuesta en metas.</span></div></a>
+            <a href="/liderazgo/mision-vision/"><div class="icon">🌅</div><div><strong>Misión y visión</strong><span>Enmarca el porqué de tu proyecto.</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="tool-side">
+        <div class="tool-panel">
+          <h2 style="font-size: 15px;">Consejos rápidos</h2>
+          <ul style="padding-left: 18px; margin: 6px 0; color: var(--text-soft); font-size: 14px; line-height: 1.7;">
+            <li>Habla como habla tu cliente.</li>
+            <li>Evita jerga interna.</li>
+            <li>Prueba tu propuesta con 5 personas antes de publicarla.</li>
+          </ul>
+        </div>
+        <div class="ad side">Anuncio</div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<div class="ad sticky-mobile">Anuncio</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="brand-col"><a class="brand" href="/"><span class="brand-mark">IT</span><span>ImpactTools</span></a><p class="muted" style="margin-top: 12px; max-width: 320px; font-size: 14.5px;">Herramientas gratuitas para convertir ideas en acción.</p><div class="vorka-badge" style="margin-top: 14px;">Creado por <strong><a href="https://www.vorka.mx" rel="noopener">Vorka</a></strong></div></div>
+      <div><h4>Emprendimiento</h4><ul><li><a href="/emprendimiento/generador-pitch/">Pitch</a></li><li><a href="/emprendimiento/canvas/">Canvas</a></li><li><a href="/emprendimiento/calculadora-roi/">ROI</a></li><li><a href="/emprendimiento/propuesta-valor/">Propuesta de valor</a></li></ul></div>
+      <div><h4>Impacto social</h4><ul><li><a href="/impacto-social/generador-proyecto/">Proyecto</a></li><li><a href="/impacto-social/calculadora-impacto/">Impacto</a></li><li><a href="/impacto-social/generador-indicadores/">Indicadores</a></li><li><a href="/impacto-social/generador-objetivos/">Objetivos</a></li></ul></div>
+      <div><h4>Liderazgo</h4><ul><li><a href="/liderazgo/objetivos-smart/">SMART</a></li><li><a href="/liderazgo/plan-accion/">Plan</a></li><li><a href="/liderazgo/evaluacion-liderazgo/">Evaluación</a></li><li><a href="/liderazgo/mision-vision/">Misión y visión</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© <span id="year">2026</span> ImpactTools</div><div><a href="/sobre/">Sobre</a> · <a href="/contacto/">Contacto</a> · <a href="/privacidad/">Privacidad</a> · <a href="/terminos/">Términos</a> · <a href="/cookies/">Cookies</a> · <a href="https://www.vorka.mx/oleeynick/" rel="noopener" target="_blank">Acompañamiento</a></div></div>
+  </div>
+</footer>
+
+<script src="/assets/main.js" defer></script>
+<script src="./tool.js" defer></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body></html>
